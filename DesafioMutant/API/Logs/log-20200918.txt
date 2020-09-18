@@ -1,0 +1,29 @@
+2020-09-18 18:51:52.967 -03:00 [Information] Start Application
+2020-09-18 18:52:51.411 -03:00 [Information] Start Application
+2020-09-18 18:54:00.371 -03:00 [Error] Método SalvarDados Não Executado erro:    at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.Execute(IEnumerable`1 commandBatches, IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalDatabase.SaveChanges(IList`1 entries)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(IList`1 entriesToSave)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(DbContext _, Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChanges(Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChanges()
+   at Repository.UserRepository.Cadastrar(List`1 entity) in C:\Users\gsav\source\reposMutant\mutant\DesafioMutant\Repository\UserRepository.cs:line 20
+   at Business.UserBO.Salvar(String jsonUsers) in C:\Users\gsav\source\reposMutant\mutant\DesafioMutant\Business\UserBO.cs:line 39
+   at API.Controllers.UserController.SalvarDados() in C:\Users\gsav\source\reposMutant\mutant\DesafioMutant\API\Controllers\UserController.cs:line 61
+2020-09-18 18:54:12.366 -03:00 [Information] Método BaixarDados
+2020-09-18 18:54:12.424 -03:00 [Information] Método BaixarDados Executado
+2020-09-18 18:54:21.385 -03:00 [Error] Método SalvarDados Não Executado erro:    at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.Execute(IEnumerable`1 commandBatches, IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalDatabase.SaveChanges(IList`1 entries)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(IList`1 entriesToSave)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(DbContext _, Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChanges(Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChanges()
+   at Repository.UserRepository.Cadastrar(List`1 entity) in C:\Users\gsav\source\reposMutant\mutant\DesafioMutant\Repository\UserRepository.cs:line 20
+   at Business.UserBO.Salvar(String jsonUsers) in C:\Users\gsav\source\reposMutant\mutant\DesafioMutant\Business\UserBO.cs:line 39
+   at API.Controllers.UserController.SalvarDados() in C:\Users\gsav\source\reposMutant\mutant\DesafioMutant\API\Controllers\UserController.cs:line 61
+2020-09-18 18:59:02.976 -03:00 [Information] Start Application
